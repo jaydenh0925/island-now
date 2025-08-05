@@ -1,5 +1,14 @@
-nav {
-    background-color: black;;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Adjust for fixed navbar */
+    background-color: #f4f4f4;
+}
+.navbar {
+    background-color: black !important;
+    color:#222;
+    padding-bottom: 5px;
+
 }
 nav img {
     width: 100%;
@@ -38,6 +47,10 @@ nav img {
     margin-top: 10px;
 }
 .product-card {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    object-fit: contain;
     background: #f7f7f7;
     padding: 18px 10px 24px 10px;
     margin-bottom: 24px;
@@ -109,4 +122,167 @@ nav img {
 .shop-category-section .btn-outline:hover {
   background: #fff;
   color: #222;
+}
+
+/* Shop by Category Section */
+.shop-category-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.category-card {
+    position: relative;
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.category-card-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.category-card-title {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+.category-card-btn {
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 8px;
+}
+.category-card-btn:hover {
+    background: #fff;
+    color: #222;
+    text-decoration: none;
+}
+
+/*Footer*/
+/* Footer Styles */
+.footer-main {
+  background: #fff;
+  color: #111;
+  margin-top: 60px;
+  font-size: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.footer-main .footer-col {
+  margin-bottom: 30px;
+}
+.footer-main h4 {
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+.footer-main .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-main .footer-links li {
+  margin-bottom: 8px;
+}
+.footer-main .footer-links a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-main .footer-links a:hover {
+  color: #888;
+  text-decoration: underline;
+}
+.footer-main .footer-newsletter {
+  position: relative;
+  margin: 18px 0 12px 0;
+}
+.footer-main .footer-newsletter input[type="email"] {
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid #111;
+  padding: 6px 36px 6px 8px;
+  font-size: 1em;
+  background: transparent;
+  outline: none;
+}
+.footer-main .footer-email-icon {
+  position: absolute;
+  right: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3em;
+  color: #111;
+}
+.footer-main .footer-social {
+  margin-top: 10px;
+}
+.footer-main .footer-social a {
+  color: #111;
+  font-size: 1.7em;
+  margin-right: 18px;
+  transition: color 0.2s;
+  display: inline-block;
+}
+.footer-main .footer-social a:hover {
+  color: #888;
+}
+.footer-main .footer-logo-row {
+  text-align: left;
+  margin: 40px 0 20px 0;
+}
+.footer-main .footer-logo {
+  width: 48px;
+  height: auto;
+}
+.footer-main .footer-shipping {
+  margin: 30px 0 10px 0;
+}
+.footer-main .footer-shipping h5 {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.footer-main .footer-shipping p {
+  margin-bottom: 6px;
+  font-size: 0.98em;
+}
+.footer-main .footer-copyright {
+  text-align: right;
+  font-size: 0.98em;
+  color: #222;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .footer-main .footer-logo-row,
+  .footer-main .footer-copyright {
+    text-align: center;
+  }
+  .footer-main .footer-email-icon {
+    right: 8%;
+  }
 }
